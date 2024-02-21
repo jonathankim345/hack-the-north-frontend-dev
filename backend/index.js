@@ -16,6 +16,14 @@ app.use(cors({
     credentials: false
 }));
 
+// Serve static files
+app.use(express.static(path.join(__dirname, 'build')));
+
+// Redirect all requests to index.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 app.use(express.json()); // Parse JSON request bodies
 
 app.get('/api/events', async (req, res) => {
