@@ -11,7 +11,7 @@ function Login() {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { isLoggedIn, login, logout } = useAuth();
+    const { login } = useAuth();
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -23,6 +23,9 @@ function Login() {
                 },
                 body: JSON.stringify({ email, password }),
             });
+
+            console.log('Login Response:', response);
+
             if (response.ok) {
                 const data = await response.json();
                 login(data.token);
