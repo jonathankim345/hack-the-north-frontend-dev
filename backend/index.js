@@ -11,7 +11,6 @@ const PORT = process.env.PORT || 3000; // Use the dynamic port assigned by Verce
 
 app.use(cors({
     origin: ["https://hack-the-north-frontend-dev.vercel.app", "https://hack-the-north-frontend-dev.vercel.app/login"],
-    // origin: "*",
     methods: ["POST", "GET"],
     credentials: false
 }));
