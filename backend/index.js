@@ -17,7 +17,7 @@ app.use(cors({
 app.use(express.json()); // Parse JSON request bodies
 
 app.get('/', async (req, res) => {
-    "Hello"
+    console.log(200)
 })
 
 app.get('https://hack-the-north-frontend-dev-api.vercel.app/api/events', async (req, res) => {
