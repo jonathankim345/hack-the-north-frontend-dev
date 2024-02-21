@@ -40,9 +40,9 @@ EMAIL=jonathankim@hackthenorth.com
 PASSWORD=waterlooforever
 PORT = 3000
 ```
-* There run this ``` npm install ```
+* In backend, to download all node modules, run ``` npm install ```
 * cd into frontend/create-react-app
-* Run this ``` npm install ```
+* Run this line ``` npm install ```
 
 ### Executing program
 
@@ -51,12 +51,13 @@ PORT = 3000
 ```
 npm run
 ```
-* A pop up like "Server is running on port 3000" should pop up
+* A pop up like "Server is running on port 3000" should pop up in the terminal console 
 * Navigate to frontend/create-react-app
 * Run this
 ```
 npm run dev
 ```
+* A site should open up automatically in your local host 
 
 The credentials to get in are:
 - Email: jonathankim@hackthenorth.com
