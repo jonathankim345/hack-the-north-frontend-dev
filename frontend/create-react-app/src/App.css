@@ -1,0 +1,127 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 15rem;
+  padding: 1.5rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.WelcomeHackers {
+  background: linear-gradient(90deg, #2196F3, #E91E63, #2196F3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  z-index: 3;
+}
+
+.BubbleContainer {
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.Bubbles {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  display: flex;
+  z-index: 2;
+}
+
+.Bubbles span {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #4fc3dc;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1rem #4fc3dc44,
+    0 0 5rem #4fc3dc44,
+    0 0 10rem #4fc3dc44;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s/var(--i));
+}
+
+.Bubbles span:nth-child(even) {
+  background: #ff2d75;
+  box-shadow: 0 0 0 1rem #ff2d7544,
+    0 0 5rem #ff2d75,
+    0 0 10rem #ff2d75;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+
+.content {
+  z-index: 3;
+}
+
+.content h1,
+.content h5,
+.content p {
+  z-index: 3 !important;
+}
+
+.cards {
+  width: 50rem;
+  text-align: center;
+}
+
+.login-container {
+  max-width: 30rem;
+}
