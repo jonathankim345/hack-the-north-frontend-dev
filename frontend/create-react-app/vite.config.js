@@ -5,7 +5,6 @@ export default defineConfig({
   plugins: [react()],
   esbuild: {
     target: 'esnext',
-    platform: 'linux',
   },
   server: {
     proxy: {
