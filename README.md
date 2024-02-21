@@ -1,6 +1,7 @@
-Writeup:
+# Writeup
 
 # Walk us through your development process. 
+## Installation Instructions Below
 
 ## 1. 
 Hey Hack the North frontend team! I planned out the structure and design with a lot of inspiration from the documentation on notion. 
@@ -34,12 +35,7 @@ Right now, I am having some issues with deployment, so I will post my repository
 
 * Make sure to clone this repository
 * Once cloned, navigate to the terminal and cd into the backend folder
-* Please create a .env file in backend/ with these properties:
-```
-EMAIL=jonathankim@hackthenorth.com
-PASSWORD=waterlooforever
-PORT = 3000
-```
+* Normally the .env file would be missing but it will be here for the convenience for running it locally
 * In backend, to download all node modules, run ``` npm install ```
 * cd into frontend/create-react-app
 * Run this line ``` npm install ```
