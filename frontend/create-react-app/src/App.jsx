@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('https://hack-the-north-frontend-dev-iota.vercel.app');
+        const response = await axios.get('https://hack-the-north-frontend-dev-iota.vercel.app/api/events');
         setEvents(response.data);
       } catch (error) {
         console.error('Error fetching events:', error);
