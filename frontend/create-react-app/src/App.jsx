@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('https://dreamy-muffin-2d6520.netlify.app//api/events');
+        const response = await axios.get('https://hack-the-north-frontend-dev-iota.vercel.app/');
         setEvents(response.data);
       } catch (error) {
         console.error('Error fetching events:', error);
