@@ -16,7 +16,7 @@ app.use(cors({
 
 app.use(express.json()); // Parse JSON request bodies
 
-app.get('/api/events', async (req, res) => {
+app.get('https://hack-the-north-frontend-dev-api.vercel.app/api/events', async (req, res) => {
     try {
         const response = await axios.post('https://api.hackthenorth.com/v3/graphql', {
             query: `
@@ -49,7 +49,7 @@ app.get('/api/events', async (req, res) => {
     }
 });
 
-app.post('/api/login', (req, res) => {
+app.post('https://hack-the-north-frontend-dev-api.vercel.app/api/login', (req, res) => {
     const { email, password } = req.body;
     if (email === EMAIL && password === PASSWORD) {
         const token = jwt.sign({ email }, 'your-secret-key', { expiresIn: '1h' });
