@@ -16,6 +16,10 @@ app.use(cors({
 
 app.use(express.json()); // Parse JSON request bodies
 
+app.get('/', async (req, res) => {
+    "Hello"
+})
+
 app.get('https://hack-the-north-frontend-dev-api.vercel.app/api/events', async (req, res) => {
     try {
         const response = await axios.post('https://api.hackthenorth.com/v3/graphql', {
