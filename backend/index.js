@@ -10,8 +10,8 @@ const { EMAIL, PASSWORD } = process.env;
 const PORT = process.env.PORT || 3000; // Use the dynamic port assigned by Vercel or default to 3000
 
 app.use(cors({
-    // origin: ["https://hack-the-north-frontend-dev.vercel.app", "https://hack-the-north-frontend-dev.vercel.app/login"],
-    origin: "*",
+    origin: ["https://hack-the-north-frontend-dev.vercel.app", "https://hack-the-north-frontend-dev.vercel.app/login"],
+    // origin: "*",
     methods: ["POST", "GET"],
     credentials: false
 }));
@@ -42,7 +42,6 @@ app.get('/api/events', async (req, res) => {
             `
         });
         const sampleEvents = response.data.data.sampleEvents;
-        console.log("Hit success")
         sampleEvents.sort((a, b) => new Date(a.start_time) - new Date(b.start_time));
         res.json(sampleEvents);
     } catch (error) {
