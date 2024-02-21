@@ -10,7 +10,8 @@ const { EMAIL, PASSWORD } = process.env;
 const PORT = process.env.PORT || 3000; // Use the dynamic port assigned by Vercel or default to 3000
 
 app.use(cors({
-    origin: ["https://hack-the-north-frontend-dev.vercel.app", "https://hack-the-north-frontend-dev.vercel.app/login"],
+    // origin: ["https://hack-the-north-frontend-dev.vercel.app", "https://hack-the-north-frontend-dev.vercel.app/login"],
+    origin: "*",
     methods: ["POST", "GET"],
     credentials: false
 }));
@@ -51,6 +52,7 @@ app.get('/api/events', async (req, res) => {
 });
 
 app.post('/api/login', (req, res) => {
+    console.log('Received login request');
     const { email, password } = req.body;
     if (email === EMAIL && password === PASSWORD) {
         const token = jwt.sign({ email }, 'your-secret-key', { expiresIn: '1h' });
