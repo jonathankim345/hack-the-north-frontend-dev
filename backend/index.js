@@ -10,7 +10,7 @@ const { EMAIL, PASSWORD } = process.env;
 const PORT = process.env.PORT || 3000; // Use the dynamic port assigned by Vercel or default to 3000
 
 app.use(cors({
-    origin: ["https://hack-the-north-frontend-dev.vercel.app", "https://hack-the-north-frontend-dev.vercel.app/login"],
+    origin: "*",
     methods: ["POST", "GET"],
     credentials: true
 }));
