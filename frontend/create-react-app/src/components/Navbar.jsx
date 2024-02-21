@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useAuth } from './../AuthContext';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const { isLoggedIn, login, logout } = useAuth();
@@ -25,12 +26,12 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="/">Home</a>
+                            <Link to="/" className="nav-link" aria-current="page">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/login" onClick={isUserLoggedIn ? handleLogout : null}>
+                            <Link to="/login" className="nav-link" onClick={isUserLoggedIn ? handleLogout : null}>
                                 {isUserLoggedIn ? "Log Out" : "Log In"}
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
