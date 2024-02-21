@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon Server.js && cross-env npm run start-frontend",
-    "start-frontend": "cd frontend/create-react-app && npm run dev",
-    "install-all": "cd backend && npm install && cd ../frontend/create-react-app && npm install"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
