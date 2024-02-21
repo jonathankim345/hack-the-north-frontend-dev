@@ -3,6 +3,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  esbuild: {
+    target: 'esnext',
+    platform: 'linux',
+  },
   server: {
     proxy: {
       '/api': {
