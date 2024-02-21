@@ -1,7 +1,7 @@
 # Writeup
 
 # Walk us through your development process. 
-## Installation Instructions Below
+## THE WEBSITE IS NOW FULLY DEPLOYED AND AVAILABLE HERE: https://hack-the-north-frontend-dev-yhaq.vercel.app/
 
 ## 1. 
 Hey Hack the North frontend team! I planned out the structure and design with a lot of inspiration from the documentation on notion. 
@@ -29,33 +29,8 @@ React library like redux. A significant portion of the testing done for logging 
 It would be crucial to ensure testing would be done through a multitude of different screen sizes equally, although I did ensure responsive design through the use of measurements like rem instead of px. 
 
 ## 3.
-Right now, I am having some issues with deployment, so I will post my repository to github (which I will provide) for it to be downloaded locally and viewed. 
-
-### Installing
-
-* Make sure to clone this repository
-* Once cloned, navigate to the terminal and cd into the backend folder
-* Normally the .env file would be missing but it will be here for the convenience for running it locally
-* In backend, to download all node modules, run ``` npm install ```
-* cd into frontend/create-react-app
-* Run this line ``` npm install ```
-
-### Executing program
-
-* Navigate to backend
-* Run this
-```
-npm run
-```
-* A pop up like "Server is running on port 3000" should pop up in the terminal console 
-* Navigate to frontend/create-react-app
-* Run this
-```
-npm run dev
-```
-* A site should open up automatically in your local host 
-
-The credentials to get in are:
+The website is available here, hosted on vercel: https://hack-the-north-frontend-dev-yhaq.vercel.app/ 
+The credentials to log in are:
 - Email: jonathankim@hackthenorth.com
 - Password: waterlooforever
 
