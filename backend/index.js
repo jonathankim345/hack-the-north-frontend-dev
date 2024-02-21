@@ -9,7 +9,7 @@ const app = express();
 const { EMAIL, PASSWORD, PORT } = process.env;
 
 app.use(cors({
-    origin: ["https://hack-the-north-frontend-dev-vxgj.vercel.app/"],
+    origin: ["https://hack-the-north-frontend-dev.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }));
