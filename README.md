@@ -29,17 +29,37 @@ It would be crucial to ensure testing would be done through a multitude of diffe
 
 ## 3.
 Right now, I am having some issues with deployment, so I will post my repository to github (which I will provide) for it to be downloaded locally and viewed. 
-Please create a .env file in /backend 
-(so it would look backend/.env
-With these properties: 
-` 
+
+### Installing
+
+* Make sure to clone this repository
+* Once cloned, navigate to the terminal and cd into the backend folder
+* Please create a .env file in backend/ with these properties:
+```
 EMAIL=jonathankim@hackthenorth.com
 PASSWORD=waterlooforever
 PORT = 3000
-`
+```
+* There run this ``` npm install ```
+* cd into frontend/create-react-app
+* Run this ``` npm install ```
+
+### Executing program
+
+* Navigate to backend
+* Run this
+```
+npm run
+```
+* A pop up like "Server is running on port 3000" should pop up
+* Navigate to frontend/create-react-app
+* Run this
+```
+npm run dev
+```
 
 The credentials to get in are:
 - Email: jonathankim@hackthenorth.com
 - Password: waterlooforever
-- PORT: 3000 (.env)
 
+If there are any questions, feel free to contact me via email jonathan.jiwon.kim@gmail.com 
