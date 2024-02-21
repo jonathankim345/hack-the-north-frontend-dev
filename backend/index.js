@@ -8,7 +8,12 @@ const jwt = require('jsonwebtoken');
 const app = express();
 const { EMAIL, PASSWORD, PORT } = process.env;
 
-app.use(cors()); // Enable CORS for all routes
+app.use(cors({
+    origin: ["https://hack-the-north-frontend-dev-vxgj.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true
+}));
+
 app.use(express.json()); // Parse JSON request bodies
 
 app.get('/api/events', async (req, res) => {
