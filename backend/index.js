@@ -9,7 +9,7 @@ const app = express();
 const { EMAIL, PASSWORD, PORT } = process.env;
 
 app.use(cors({
-    origin: ["https://hack-the-north-frontend-dev.vercel.app"],
+    origin: ["https://hack-the-north-frontend-dev-api.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }));
@@ -40,6 +40,7 @@ app.get('/api/events', async (req, res) => {
             `
         });
         const sampleEvents = response.data.data.sampleEvents;
+        console.log("Hit success")
         sampleEvents.sort((a, b) => new Date(a.start_time) - new Date(b.start_time));
         res.json(sampleEvents);
     } catch (error) {
