@@ -12,7 +12,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://hack-the-north-frontend-dev-vxgj.vercel.app/',
+        target: 'https://hack-the-north-frontend-dev-api.vercel.app/',
         changeOrigin: true,
         secure: false,
         ws: true,
